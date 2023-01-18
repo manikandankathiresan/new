@@ -16,18 +16,20 @@ const AssetsTable = () => {
               {thead.value === "sno" ? (
                 (idx += 1)
               ) : thead.value === "name" ? (
-                <div>
-                  <img
-                    className="coin-logo"
-                    style={{
-                      height: "24px",
-                      width: "24px",
-                      borderRadius: "12px",
-                    }}
-                    src={it.img}
-                    alt="icon"
-                  />
-                  {it.name}
+                <div className="assets-name" style={{display: 'flex', marginRight: '2px'}}>
+                  <div className="img-logo" style={{marginRight: '10px'}}>
+                    <img
+                      className="coin-logo"
+                      style={{
+                        height: "24px",
+                        width: "24px",
+                        borderRadius: "12px",
+                      }}
+                      src={it.img}
+                      alt="icon"
+                    />
+                  </div>
+                  <div>{it.name}</div>
                 </div>
               ) : thead.value === "price" ? (
                 <div
