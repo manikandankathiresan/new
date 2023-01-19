@@ -1,4 +1,3 @@
-import React from "react";
 import AssetsTable from "../../containers/assets-table";
 
 const AppLayout = () => {
